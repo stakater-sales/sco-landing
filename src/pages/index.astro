@@ -1,0 +1,261 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Presentation">
+
+    <!-- Navigation -->
+    <nav class="nav" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <div class="nav-logo">Stakater Cloud Orchestrator</div>
+            <ul class="nav-menu">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#challenge">Challenge</a></li>
+                <li><a href="#solution">Solution</a></li>
+                <li><a href="#architecture">Architecture</a></li>
+                <li><a href="#differentiation">Differentiation</a></li>
+                <li><a href="#value">Value</a></li>
+                <li><a href="#demo">Demo</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="section section-dark section-hero">
+        <div class="container fade-in">
+            <h1 class="hero-title">Stakater Cloud Orchestrator</h1>
+            <p class="hero-subtitle">Kubernetes-Native Cloud Management Platform</p>
+            <p class="hero-tagline">Transform infrastructure into revenue-ready cloud services</p>
+            <a href="#challenge" class="btn btn-primary">Learn More</a>
+        </div>
+    </section>
+
+    <!-- Challenge Section -->
+    <section id="challenge" class="section section-light">
+        <div class="container fade-in">
+            <div class="section-header">
+                <span class="section-icon">🧩</span>
+                <h2>The Challenge</h2>
+            </div>
+            <div class="section-content">
+                <p class="lead">Service providers, MSPs, CSPs, and telcos have Kubernetes infrastructure—but can't sell cloud services.</p>
+                <div class="challenge-grid">
+                    <div class="challenge-card">
+                        <h3>No Unified Control Plane</h3>
+                        <p>Fragmented tools and interfaces prevent cohesive cloud service delivery</p>
+                    </div>
+                    <div class="challenge-card">
+                        <h3>No Single Orchestration</h3>
+                        <p>Multiple systems create operational complexity and vendor lock-in</p>
+                    </div>
+                    <div class="challenge-card">
+                        <h3>Costly Custom Development</h3>
+                        <p>Building portals from scratch takes years and millions in investment</p>
+                    </div>
+                    <div class="challenge-card">
+                        <h3>Customer Expectations</h3>
+                        <p>Users demand public cloud experiences—self-service, instant provisioning</p>
+                    </div>
+                    <div class="challenge-card">
+                        <h3>Monetization Difficulty</h3>
+                        <p>Infrastructure investments don't translate to sellable cloud services</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section id="solution" class="section section-dark">
+        <div class="container fade-in">
+            <div class="section-header">
+                <span class="section-icon">🚀</span>
+                <h2>The Solution</h2>
+            </div>
+            <div class="section-content">
+                <p class="lead">Next-generation, Kubernetes-native Cloud Management Platform</p>
+                <p class="solution-description">Vendor-neutral, built entirely on Kubernetes APIs—turn your infrastructure into an operational cloud in weeks, not years.</p>
+
+                <div class="service-portfolio">
+                    <h3>Comprehensive Service Portfolio</h3>
+                    <div class="service-grid">
+                        <div class="service-item">
+                            <div class="service-icon">💻</div>
+                            <p>VMaaS</p>
+                        </div>
+                        <div class="service-item">
+                            <div class="service-icon">☸️</div>
+                            <p>Kubernetes</p>
+                        </div>
+                        <div class="service-item">
+                            <div class="service-icon">🔴</div>
+                            <p>OpenShift</p>
+                        </div>
+                        <div class="service-item">
+                            <div class="service-icon">🗄️</div>
+                            <p>DBaaS</p>
+                        </div>
+                        <div class="service-item">
+                            <div class="service-icon">💾</div>
+                            <p>Storage</p>
+                        </div>
+                        <div class="service-item">
+                            <div class="service-icon">🤖</div>
+                            <p>AI/ML</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Architecture Section -->
+    <section id="architecture" class="section section-light">
+        <div class="container fade-in">
+            <div class="section-header">
+                <h2>Architecture</h2>
+            </div>
+            <div class="section-content">
+                <p class="lead">Built on Kubernetes Control Plane (KCP) for true multi-tenant cloud orchestration</p>
+
+                <div class="architecture-container">
+                    <img src="/assets/architecture.svg" alt="Stakater Cloud Orchestrator Architecture" class="architecture-diagram">
+                </div>
+
+                <div class="tech-highlights">
+                    <div class="tech-card">
+                        <h4>Kubernetes CRDs as API Contract</h4>
+                        <p>Native Kubernetes resources define all cloud services—no proprietary APIs</p>
+                    </div>
+                    <div class="tech-card">
+                        <h4>Shard-per-Tenant Isolation</h4>
+                        <p>Each tenant gets dedicated workspace with complete resource isolation</p>
+                    </div>
+                    <div class="tech-card">
+                        <h4>Abstracted API Layer</h4>
+                        <p>Unified <code>cloud.company.io</code> API group simplifies service consumption</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Differentiation Section -->
+    <section id="differentiation" class="section section-dark">
+        <div class="container fade-in">
+            <div class="section-header">
+                <span class="section-icon">⚙️</span>
+                <h2>What Sets Us Apart</h2>
+            </div>
+            <div class="section-content">
+                <div class="diff-table">
+                    <div class="diff-row diff-header">
+                        <div class="diff-cell">Capability</div>
+                        <div class="diff-cell">Advantage</div>
+                    </div>
+                    <div class="diff-row">
+                        <div class="diff-cell"><strong>Kubernetes-Native</strong></div>
+                        <div class="diff-cell">No legacy baggage—built from the ground up on K8s APIs</div>
+                    </div>
+                    <div class="diff-row">
+                        <div class="diff-cell"><strong>Multi-Tenant by Design</strong></div>
+                        <div class="diff-cell">Workspace isolation ensures security and scalability from day one</div>
+                    </div>
+                    <div class="diff-row">
+                        <div class="diff-cell"><strong>Extensible CRD Framework</strong></div>
+                        <div class="diff-cell">Add new services without platform modifications—future-proof architecture</div>
+                    </div>
+                    <div class="diff-row">
+                        <div class="diff-cell"><strong>Integrated FinOps</strong></div>
+                        <div class="diff-cell">Built-in cost tracking and chargeback for immediate monetization</div>
+                    </div>
+                    <div class="diff-row">
+                        <div class="diff-cell"><strong>White-Label Console</strong></div>
+                        <div class="diff-cell">Your brand, your cloud—fully customizable customer portal</div>
+                    </div>
+                    <div class="diff-row">
+                        <div class="diff-cell"><strong>Vendor-Neutral</strong></div>
+                        <div class="diff-cell">No lock-in—works with any infrastructure or cloud provider</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Proposition Section -->
+    <section id="value" class="section section-light">
+        <div class="container fade-in">
+            <div class="section-header">
+                <span class="section-icon">💡</span>
+                <h2>Value Proposition</h2>
+            </div>
+            <div class="section-content">
+                <div class="value-grid">
+                    <div class="value-column">
+                        <h3>For Service Providers</h3>
+                        <ul class="value-list">
+                            <li><strong>Accelerate Monetization:</strong> Launch cloud services in weeks instead of years</li>
+                            <li><strong>New Revenue Streams:</strong> Transform infrastructure costs into profitable offerings</li>
+                            <li><strong>Polished Experience:</strong> Deliver public cloud UX without custom development</li>
+                            <li><strong>Compete with Hyperscalers:</strong> Offer comparable services with local advantages</li>
+                        </ul>
+                    </div>
+                    <div class="value-column">
+                        <h3>Ideal For</h3>
+                        <ul class="value-list">
+                            <li><strong>Sovereign Clouds:</strong> Government and regulated industry providers</li>
+                            <li><strong>Regional Cloud Providers:</strong> Local alternatives to global hyperscalers</li>
+                            <li><strong>Telco Cloud Services:</strong> Telecommunications companies offering cloud</li>
+                            <li><strong>Enterprise Private Clouds:</strong> Large organizations with multi-tenant needs</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Transition Section -->
+    <section id="demo" class="section section-dark section-demo">
+        <div class="container fade-in">
+            <div class="section-header">
+                <span class="section-icon">🎯</span>
+                <h2>See It In Action</h2>
+            </div>
+            <div class="section-content">
+                <p class="lead">Let's explore how Stakater Cloud Orchestrator transforms infrastructure into cloud services</p>
+
+                <div class="demo-flows">
+                    <h3>Key Demonstration Flows</h3>
+                    <div class="demo-grid">
+                        <div class="demo-card">
+                            <h4>1. Tenant Workspace Creation</h4>
+                            <p>Watch how quickly we provision isolated environments for new customers</p>
+                        </div>
+                        <div class="demo-card">
+                            <h4>2. Service Subscription</h4>
+                            <p>See self-service enablement of Kubernetes, VMs, databases, and more</p>
+                        </div>
+                        <div class="demo-card">
+                            <h4>3. Multi-Tenancy in Practice</h4>
+                            <p>Observe complete isolation and security across tenant workspaces</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="demo-cta">
+                    <p class="demo-ready">Ready for the live demonstration</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Stakater. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</BaseLayout>

@@ -1,0 +1,236 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-labelledby="arch-title arch-desc">
+  <title id="arch-title">Stakater Cloud Orchestrator Architecture</title>
+  <desc id="arch-desc">Four-layer architecture showing Infrastructure, SCO Control Plane, Service Portfolio, and White-label Portal with technical details</desc>
+
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="layer1Grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a5f;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0a192f;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="layer2Grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2d5a7b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e3a5f;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="layer3Grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#3d7a9f;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2d5a7b;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="layer4Grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#64ffda;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#5cabff;stop-opacity:0.8" />
+    </linearGradient>
+
+    <!-- Arrow marker -->
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#64ffda" />
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="700" fill="#0a192f"/>
+
+  <!-- Main Architecture (Left Side) -->
+  <g id="main-architecture">
+    <!-- Title -->
+    <text x="300" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#64ffda" text-anchor="middle">
+      Architecture Overview
+    </text>
+
+    <!-- Layer 4: White-label Portal -->
+    <rect x="50" y="80" width="500" height="100" rx="8" fill="url(#layer4Grad)" stroke="#64ffda" stroke-width="2"/>
+    <text x="300" y="115" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#0a192f" text-anchor="middle">
+      Layer 4: White-Label Customer Portal
+    </text>
+    <text x="300" y="140" font-family="Arial, sans-serif" font-size="14" fill="#0a192f" text-anchor="middle">
+      Self-service interface · Your brand · Multi-tenant UI
+    </text>
+    <text x="300" y="160" font-family="Arial, sans-serif" font-size="12" fill="#0a192f" text-anchor="middle" font-style="italic">
+      Revenue Interface
+    </text>
+
+    <!-- Arrow 3-4 -->
+    <line x1="300" y1="180" x2="300" y2="210" stroke="#64ffda" stroke-width="3" marker-end="url(#arrowhead)"/>
+
+    <!-- Layer 3: Service Portfolio -->
+    <rect x="50" y="220" width="500" height="120" rx="8" fill="url(#layer3Grad)" stroke="#5cabff" stroke-width="2"/>
+    <text x="300" y="255" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#ccd6f6" text-anchor="middle">
+      Layer 3: Service Portfolio
+    </text>
+
+    <!-- Service icons -->
+    <g id="services" font-family="Arial, sans-serif" font-size="12" fill="#ccd6f6">
+      <g transform="translate(80, 270)">
+        <circle cx="0" cy="0" r="20" fill="#112240" stroke="#5cabff"/>
+        <text x="0" y="5" text-anchor="middle" font-size="18">💻</text>
+        <text x="0" y="35" text-anchor="middle">VMaaS</text>
+      </g>
+      <g transform="translate(180, 270)">
+        <circle cx="0" cy="0" r="20" fill="#112240" stroke="#5cabff"/>
+        <text x="0" y="5" text-anchor="middle" font-size="18">☸️</text>
+        <text x="0" y="35" text-anchor="middle">K8s</text>
+      </g>
+      <g transform="translate(280, 270)">
+        <circle cx="0" cy="0" r="20" fill="#112240" stroke="#5cabff"/>
+        <text x="0" y="5" text-anchor="middle" font-size="18">🗄️</text>
+        <text x="0" y="35" text-anchor="middle">DBaaS</text>
+      </g>
+      <g transform="translate(380, 270)">
+        <circle cx="0" cy="0" r="20" fill="#112240" stroke="#5cabff"/>
+        <text x="0" y="5" text-anchor="middle" font-size="18">💾</text>
+        <text x="0" y="35" text-anchor="middle">Storage</text>
+      </g>
+      <g transform="translate(480, 270)">
+        <circle cx="0" cy="0" r="20" fill="#112240" stroke="#5cabff"/>
+        <text x="0" y="5" text-anchor="middle" font-size="18">🤖</text>
+        <text x="0" y="35" text-anchor="middle">AI/ML</text>
+      </g>
+    </g>
+
+    <!-- Arrow 2-3 -->
+    <line x1="300" y1="340" x2="300" y2="370" stroke="#64ffda" stroke-width="3" marker-end="url(#arrowhead)"/>
+
+    <!-- Layer 2: SCO Control Plane -->
+    <rect x="50" y="380" width="500" height="120" rx="8" fill="url(#layer2Grad)" stroke="#5cabff" stroke-width="2"/>
+    <text x="300" y="415" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#ccd6f6" text-anchor="middle">
+      Layer 2: SCO Control Plane
+    </text>
+    <text x="300" y="440" font-family="Arial, sans-serif" font-size="14" fill="#8892b0" text-anchor="middle">
+      KCP-Based Multi-Tenant Orchestration
+    </text>
+    <text x="300" y="465" font-family="Arial, sans-serif" font-size="13" fill="#8892b0" text-anchor="middle">
+      • Workspace Isolation • CRD-Based APIs • Service Orchestration
+    </text>
+    <text x="300" y="485" font-family="Arial, sans-serif" font-size="13" fill="#8892b0" text-anchor="middle">
+      • FinOps Integration • Resource Management
+    </text>
+
+    <!-- Arrow 1-2 -->
+    <line x1="300" y1="500" x2="300" y2="530" stroke="#64ffda" stroke-width="3" marker-end="url(#arrowhead)"/>
+
+    <!-- Layer 1: Infrastructure -->
+    <rect x="50" y="540" width="500" height="100" rx="8" fill="url(#layer1Grad)" stroke="#5cabff" stroke-width="2"/>
+    <text x="300" y="575" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#ccd6f6" text-anchor="middle">
+      Layer 1: Infrastructure
+    </text>
+    <text x="300" y="600" font-family="Arial, sans-serif" font-size="14" fill="#8892b0" text-anchor="middle">
+      Kubernetes Clusters · Compute · Storage · Network
+    </text>
+    <text x="300" y="620" font-family="Arial, sans-serif" font-size="12" fill="#8892b0" text-anchor="middle" font-style="italic">
+      Your existing infrastructure
+    </text>
+  </g>
+
+  <!-- Technical Details Callout (Right Side) -->
+  <g id="technical-details">
+    <!-- Title -->
+    <text x="850" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#64ffda" text-anchor="middle">
+      Technical Deep Dive
+    </text>
+
+    <!-- Workspace Topology Box -->
+    <rect x="620" y="70" width="460" height="200" rx="8" fill="#112240" stroke="#64ffda" stroke-width="2"/>
+    <text x="850" y="100" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#64ffda" text-anchor="middle">
+      KCP Workspace Topology
+    </text>
+
+    <!-- Workspace diagram -->
+    <g id="workspace-structure">
+      <!-- Root workspace -->
+      <rect x="750" y="120" width="200" height="40" rx="4" fill="#1e3a5f" stroke="#5cabff" stroke-width="2"/>
+      <text x="850" y="145" font-family="Arial, sans-serif" font-size="14" fill="#ccd6f6" text-anchor="middle" font-weight="bold">
+        Root Workspace
+      </text>
+
+      <!-- Provider branch -->
+      <line x1="750" y1="160" x2="700" y2="190" stroke="#64ffda" stroke-width="2"/>
+      <rect x="640" y="190" width="120" height="35" rx="4" fill="#2d5a7b" stroke="#5cabff" stroke-width="1.5"/>
+      <text x="700" y="210" font-family="Arial, sans-serif" font-size="12" fill="#ccd6f6" text-anchor="middle">
+        Providers
+      </text>
+      <text x="700" y="220" font-family="Arial, sans-serif" font-size="9" fill="#8892b0" text-anchor="middle">
+        (API Exports)
+      </text>
+
+      <!-- Tenant branch -->
+      <line x1="950" y1="160" x2="1000" y2="190" stroke="#64ffda" stroke-width="2"/>
+      <rect x="940" y="190" width="120" height="35" rx="4" fill="#2d5a7b" stroke="#5cabff" stroke-width="1.5"/>
+      <text x="1000" y="210" font-family="Arial, sans-serif" font-size="12" fill="#ccd6f6" text-anchor="middle">
+        Tenants
+      </text>
+      <text x="1000" y="220" font-family="Arial, sans-serif" font-size="9" fill="#8892b0" text-anchor="middle">
+        (Per-Tenant Shards)
+      </text>
+
+      <!-- Individual tenant shards -->
+      <rect x="945" y="235" width="35" height="20" rx="2" fill="#3d7a9f" stroke="#64ffda" stroke-width="1"/>
+      <text x="962" y="248" font-family="Arial, sans-serif" font-size="9" fill="#ccd6f6" text-anchor="middle">T1</text>
+
+      <rect x="985" y="235" width="35" height="20" rx="2" fill="#3d7a9f" stroke="#64ffda" stroke-width="1"/>
+      <text x="1002" y="248" font-family="Arial, sans-serif" font-size="9" fill="#ccd6f6" text-anchor="middle">T2</text>
+
+      <rect x="1025" y="235" width="35" height="20" rx="2" fill="#3d7a9f" stroke="#64ffda" stroke-width="1"/>
+      <text x="1042" y="248" font-family="Arial, sans-serif" font-size="9" fill="#ccd6f6" text-anchor="middle">T3</text>
+    </g>
+
+    <!-- API Abstraction Box -->
+    <rect x="620" y="290" width="460" height="140" rx="8" fill="#112240" stroke="#64ffda" stroke-width="2"/>
+    <text x="850" y="320" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#64ffda" text-anchor="middle">
+      API Abstraction Layer
+    </text>
+
+    <!-- API comparison -->
+    <g id="api-abstraction">
+      <rect x="650" y="335" width="180" height="75" rx="4" fill="#1e3a5f" stroke="#5cabff" stroke-width="1.5"/>
+      <text x="740" y="355" font-family="Arial, sans-serif" font-size="13" fill="#64ffda" text-anchor="middle" font-weight="bold">
+        Customer API
+      </text>
+      <text x="740" y="375" font-family="Courier New, monospace" font-size="11" fill="#ccd6f6" text-anchor="middle">
+        cloud.company.io
+      </text>
+      <text x="740" y="395" font-family="Arial, sans-serif" font-size="10" fill="#8892b0" text-anchor="middle">
+        Simplified, unified
+      </text>
+
+      <text x="850" y="380" font-family="Arial, sans-serif" font-size="20" fill="#64ffda" text-anchor="middle">→</text>
+
+      <rect x="870" y="335" width="180" height="75" rx="4" fill="#1e3a5f" stroke="#5cabff" stroke-width="1.5"/>
+      <text x="960" y="355" font-family="Arial, sans-serif" font-size="13" fill="#5cabff" text-anchor="middle" font-weight="bold">
+        Internal KCP APIs
+      </text>
+      <text x="960" y="375" font-family="Courier New, monospace" font-size="10" fill="#ccd6f6" text-anchor="middle">
+        *.kcp.io/v1alpha1
+      </text>
+      <text x="960" y="395" font-family="Arial, sans-serif" font-size="10" fill="#8892b0" text-anchor="middle">
+        Complex, provider-specific
+      </text>
+    </g>
+
+    <!-- Multi-Tenancy Highlight Box -->
+    <rect x="620" y="450" width="460" height="120" rx="8" fill="#112240" stroke="#64ffda" stroke-width="2"/>
+    <text x="850" y="480" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#64ffda" text-anchor="middle">
+      Multi-Tenant Isolation
+    </text>
+
+    <g id="isolation-benefits" font-family="Arial, sans-serif" font-size="12" fill="#ccd6f6">
+      <text x="640" y="510">✓ Dedicated workspace per tenant</text>
+      <text x="640" y="530">✓ Complete resource isolation</text>
+      <text x="640" y="550">✓ Independent API access</text>
+    </g>
+
+    <!-- Key Technical Concepts -->
+    <rect x="620" y="590" width="460" height="90" rx="8" fill="#1e3a5f" stroke="#5cabff" stroke-width="2"/>
+    <text x="850" y="615" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#64ffda" text-anchor="middle">
+      Core Architecture Principles
+    </text>
+    <text x="850" y="640" font-family="Arial, sans-serif" font-size="12" fill="#ccd6f6" text-anchor="middle">
+      Kubernetes CRDs as API Contract
+    </text>
+    <text x="850" y="660" font-family="Arial, sans-serif" font-size="12" fill="#ccd6f6" text-anchor="middle">
+      Declarative State Management · GitOps Ready
+    </text>
+  </g>
+
+  <!-- Connection line from main to details -->
+  <path d="M 550 400 Q 585 400, 620 350" stroke="#64ffda" stroke-width="2" stroke-dasharray="5,5" fill="none" opacity="0.5"/>
+</svg>
